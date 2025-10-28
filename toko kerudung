@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Kerudung tia</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffafc;
+    }
+
+    header {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 25px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e91e63;
+      color: white;
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🧕 <b>Toko Kerudung tia</b> 💖<br>
+    Koleksi Kerudung Cantik & Trendy
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x300?text=Kerudung+Pashmina" alt="Kerudung Pashmina">
+      <h3>Kerudung Pashmina</h3>
+      <p class="price">Rp 75.000</p>
+      <button onclick="beli('Kerudung Pashmina')">Beli Sekarang</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250x300?text=Kerudung+Segi+Empat" alt="Kerudung Segi Empat">
+      <h3>Kerudung Segi Empat</h3>
+      <p class="price">Rp 65.000</p>
+      <button onclick="beli('Kerudung Segi Empat')">Beli Sekarang</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250x300?text=Kerudung+Instan" alt="Kerudung Instan">
+      <h3>Kerudung Instan</h3>
+      <p class="price">Rp 80.000</p>
+      <button onclick="beli('Kerudung Instan')">Beli Sekarang</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250x300?text=Kerudung+Plisket" alt="Kerudung Plisket">
+      <h3>Kerudung Plisket</h3>
+      <p class="price">Rp 90.000</p>
+      <button onclick="beli('Kerudung Plisket')">Beli Sekarang</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Toko Kerudung Dini | Semua Hak Dilindungi
+  </footer>
+
+  <script>
+    function beli(nama) {
+      alert('Kamu memilih ' + nama + ' 💕');
+      window.location.href = "https://wa.me/6281234567890?text=Halo%20saya%20ingin%20beli%20" + encodeURIComponent(nama);
+    }
+  </script>
+
+</body>
+</html>
